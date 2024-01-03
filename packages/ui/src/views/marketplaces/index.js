@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux'
 import PropTypes from 'prop-types'
 
 // material-ui
-import { Grid, Box, Stack, Tabs, Tab, Badge } from '@mui/material'
+import { Grid, Box, Stack, Tabs, Tab } from '@mui/material'
 import { useTheme } from '@mui/material/styles'
 import { IconHierarchy, IconTool } from '@tabler/icons'
 
