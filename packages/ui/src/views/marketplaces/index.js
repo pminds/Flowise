@@ -157,7 +157,8 @@ const Marketplace = () => {
                                     getAllChatflowsMarketplacesApi.data &&
                                     getAllChatflowsMarketplacesApi.data.map((data, index) => (
                                         <Grid key={index} item lg={3} md={4} sm={6} xs={12}>
-                                            {data.badge && (
+                                            <ItemCard onClick={() => goToCanvas(data)} data={data} images={images[data.id]} />
+                                            {/* {data.badge && (
                                                 <Badge
                                                     sx={{
                                                         '& .MuiBadge-badge': {
@@ -172,7 +173,7 @@ const Marketplace = () => {
                                             )}
                                             {!data.badge && (
                                                 <ItemCard onClick={() => goToCanvas(data)} data={data} images={images[data.id]} />
-                                            )}
+                                            )} */}
                                         </Grid>
                                     ))}
                             </Grid>
@@ -183,7 +184,8 @@ const Marketplace = () => {
                                     getAllToolsMarketplacesApi.data &&
                                     getAllToolsMarketplacesApi.data.map((data, index) => (
                                         <Grid key={index} item lg={3} md={4} sm={6} xs={12}>
-                                            {data.badge && (
+                                            <ItemCard data={data} onClick={() => goToTool(data)} />
+                                            {/* {data.badge && (
                                                 <Badge
                                                     sx={{
                                                         '& .MuiBadge-badge': {
@@ -196,7 +198,7 @@ const Marketplace = () => {
                                                     <ItemCard data={data} onClick={() => goToTool(data)} />
                                                 </Badge>
                                             )}
-                                            {!data.badge && <ItemCard data={data} onClick={() => goToTool(data)} />}
+                                            {!data.badge && <ItemCard data={data} onClick={() => goToTool(data)} />} */}
                                         </Grid>
                                     ))}
                             </Grid>
