@@ -23,7 +23,7 @@
         "@uiw/codemirror-theme-vscode": "^4.21.21",
         "@uiw/react-codemirror": "^4.21.21",
         "clsx": "^1.1.1",
-        "flowise-embed": "https://github.com/pminds/FlowiseChatEmbed",
+        "flowise-embed": "*",
         "flowise-embed-react": "*",
         "flowise-react-json-view": "*",
         "formik": "^2.2.6",
